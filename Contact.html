@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <!--En-tête-->
+  <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Aux Gourmandises de Rachel</title>
+        <link href="https://fonts.cdnfonts.com/css/kenteken" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="index.css" />
+  </head>
+  <header>
+    <a href="index.html" target="_top">
+        <img  class="img_logo" src="Divers/Logo.png"   alt="Logo" class="logo" />
+    </a>
+    <div class="topnav" id="myTopnav">
+      <a href="index.html" class="active">R</a>
+      <a href="Patisserie.html">Patisseries</a>
+      <a href="Gourmandises.html">Gourmandises</a>
+      <a href="Events.html">Evènements</a>
+      <a href="A_propos.html">A propos</a>
+      <a href="Contact.html">Contact</a>
+      <a href="trouver.html">Où me trouver</a>
+
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+</header>
+  <!--Corps du texte-->
+  <body>
+    <div class="container">
+      <form post="post" action="/Contact.php">
+        <label for="fname">Nom</label>
+        <input type="text" id="fname" name="Nom" placeholder="Votre Nom">
+    
+        <label for="lname">Prénom</label>
+        <input type="text" id="lname" name="Prénom" placeholder="Votre Prénom">
+
+        <label for="email">Courriel</label>
+        <input type="email" id="email" pattern="+@." size="30" placeholder="Votre courriel" required>
+
+        <label for="phone">Téléphone</label>
+        <input type="tel" id="phone" name="phone"  placeholder="Votre n° de téléphone"required>
+        
+    
+        <label for="Type">Sujet</label>
+        <select id="Type" name="Type">
+          <option value="V1">Patisserie</option>
+          <option value="V2">Gourmandise</option>
+          <option value="V3">Evenement</option>
+          <option value="V4">Autre</option>
+        </select>
+    
+        <label for="Description">Desciption</label>
+        <textarea id="Description" name="Description" placeholder="Comment puis-je vous aider ?" style="height:150px"></textarea>
+    
+        <input type="submit" value="Envoyer demande">
+      
+        <!-- https://lesdocs.fr/envoi-du-contenu-dun-formulaire-vers-un-email/ -->
+      </form>
+    </div>
+  </body>
+  <script>
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+</script>
+</html>

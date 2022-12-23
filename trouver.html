@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <!--En-tête-->
+  <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Aux Gourmandises de Rachel</title>
+        <link href="https://fonts.cdnfonts.com/css/kenteken" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="index.css" />
+  </head>
+
+  <header>
+    <a href="index.html" target="_top">
+        <img  class="img_logo" src="Divers/Logo.png"   alt="Logo" class="logo" />
+    </a>
+    <div class="topnav" id="myTopnav">
+      <a href="index.html" class="active">R</a>
+      <a href="Patisserie.html">Patisseries</a>
+      <a href="Gourmandises.html">Gourmandises</a>
+      <a href="Events.html">Evènements</a>
+      <a href="A_propos.html">A propos</a>
+      <a href="Contact.html">Contact</a>
+      <a href="trouver.html">Où me trouver</a>
+
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+</header>
+  <!--Corps du texte-->
+  <body>
+    <div class="info info1"></div>
+    <div class="info info2"></div>
+
+    <div class="colonne colonne1">
+      <h1>Toute l'année </h1> <br>
+      <h2>Du lundi au dimanche possibilité de commander via : </h2>
+      <ul class="trouve" style="list-style-image: url(Divers/Rouleau_puce.gif)">
+          <li><h3>Le site</h3></li>
+          <li><h3>Le mail</h3></li>
+          <li><h3>Le téléphone</h3></li>
+      </ul>
+      <h4>(72h avant la date souhaitée)</h4>
+
+     <br><br><br>
+
+      <h2>Durant les jours de semaine, le retrait des commandes se fera, soit : </h2>
+      <ul class="trouve" style="list-style-image: url(Divers/Rouleau_puce.gif)">
+          <li><h3>à l'atelier</h3></li>
+          <li><h3>à l'adresse souhaitée </h3></li>
+      </ul>
+      <h4> (livraison gratuite dans un rayon de 10km autour de Vergèze)</h4>
+      <br>
+    </div>
+
+    <img class="img_trouve" src="Divers/Logo.png"   alt="Logo" class="logo" />
+
+    <div class="colonne colonne2">
+      <h1>Retrouvez moi au <br> Caveau D'Héraclès</h1><br>
+      <ul class="trouve2" >
+        <!-- style="list-style-image: url(Divers/Toque_puce.png); " -->
+        <li><h2>Le VENDREDI soir <br>de 17h à 19h00 </h2><br></li>
+        <li><h2>Le SAMEDI<br> de 9h à 12h30 <br>et <br>de 16h à 19h</h2><br></li>
+        <li><h2>Le DIMANCHE <br> de 9h à 12h30</h2></li>
+      </ul>
+
+    </div>
+  </body>
+  <script>
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+</script>
+</html>
